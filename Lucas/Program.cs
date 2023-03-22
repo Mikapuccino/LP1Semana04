@@ -4,9 +4,21 @@ namespace Lucas
 {
     class Program
     {
+        /// <summary>
+        /// Asks user for a number that is stored in Pos, then calls the
+        /// Lucas method passing Pos as the argument, finally it writes
+        /// the returned value
+        /// </summary>
+        /// <param name="args">Arguments passed by the
+        /// user from the console</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Input position in the Lucas sequence: ");
+            int Pos = int.Parse(Console.ReadLine());
+
+            int FinalValue = Lucas(Pos);
+
+            Console.WriteLine($"Number in that position is {FinalValue}");
         }
 
         /// <summary>
