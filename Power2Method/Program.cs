@@ -50,6 +50,11 @@ namespace Power2Method
             }
         }
 
+        /// <summary>
+        /// Writes the value of i to the power of n1 through n2
+        /// </summary>
+        /// <param name="n1">First number used as a power</param>
+        /// <param name="n2">Last number used as a power</param>
         private static void PowersOf2UntilN(int n1, int n2)
         {
             for(int i = 1 << n1; i <= (1 << n2); i = i << 1)
