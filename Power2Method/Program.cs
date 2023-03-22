@@ -13,15 +13,15 @@ namespace Power2Method
             // Calls method passing the number the user gave as the argument
             PowersOf2UntilN(nCount);
             PowersOf2UntilN(nCount);
+            // Calls method with specific values
+            PowersOf2UntilN(4);
+            PowersOf2UntilN(8);
         }
 
-        // Method writes the value of i to the power of 1 through 5
+        // Method calls PowersOf2UntilN method passing 5 as the argument
         private static void PowersOf2Until5()
         {
-            for(int i = 1; i <= (1 << 5); i = i << 1)
-            {
-                Console.WriteLine(i);
-            }
+            PowersOf2UntilN(5);
         }
 
         // Method writes the value of i to the power of 1 through n,
