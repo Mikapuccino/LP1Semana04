@@ -27,6 +27,9 @@ namespace Power2Method
             // Calls method with specific values
             PowersOf2UntilN(4);
             PowersOf2UntilN(8);
+
+            // Calls method with 3 and 5 as arguments
+            PowersOf2UntilN(3, 5);
         }
 
         /// <summary>
@@ -40,7 +43,7 @@ namespace Power2Method
         /// <summary>
         /// Writes the value of i to the power of 1 through n
         /// </summary>
-        /// <param name="n">Number that determines number of times the for
+        /// <param name="n">Last number that determines number of times the for
         /// loop repeats</param>
         private static void PowersOf2UntilN(int n)
         {
