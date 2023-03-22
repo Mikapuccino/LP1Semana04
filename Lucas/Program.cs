@@ -13,8 +13,7 @@ namespace Lucas
         /// user from the console</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Input position in the Lucas sequence: ");
-            int Pos = int.Parse(Console.ReadLine());
+            int Pos = int.Parse(args[0]);
 
             int FinalValue = Lucas(Pos);
 
